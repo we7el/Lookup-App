@@ -38,7 +38,7 @@ These are the paragraphs/sentences that are semantically closest to your query. 
 
 ## Summary
 
-Suggestions are welcome. Please open an issue first to discuss what you would like to change.
+Suggestions are welcome. Please open an issue to discuss what you would like to change.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
