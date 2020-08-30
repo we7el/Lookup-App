@@ -20,8 +20,12 @@ python app.py
 You can either go to [localhost:5000](http://localhost:5000/) or deploy it on a server.
 
 ## How it looks like
-
-
+First, upload your .docx documents
+![Test Image 1](upload-page.png)
+You'll be redirected to the search homepage. Enter your query, and select the documents you want to search over from the list of uploaded files.
+![Test Image 2](search-homepage.png)
+These are the paragraphs/sentences that are semantically closest to your query. You can click on "See in context" to look at it as part of the whole file.
+![Test Image 3](search-result.png)
 
 ## Summary
 Suggestions are welcome. Please open an issue first to discuss what you would like to change.
