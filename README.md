@@ -35,7 +35,9 @@ These are the paragraphs/sentences that are semantically closest to your query. 
 <p align="center">
 <img src="search-result.png" width="1000">
 </p>
+
 ## Summary
+
 Suggestions are welcome. Please open an issue first to discuss what you would like to change.
 
 ## License
