@@ -21,7 +21,7 @@ You can either go to [localhost:5000](http://localhost:5000/) or deploy it on a 
 
 ## How it looks like
 First, upload your .docx documents
-<img src=upload-page.png | width=100>
+<img src="upload-page.png" width="100">
 You'll be redirected to the search homepage. Enter your query, and select the documents you want to search over from the list of uploaded files.
 ![Test Image 2](search-homepage.png | width=100)
 These are the paragraphs/sentences that are semantically closest to your query. You can click on "See in context" to look at it as part of the whole file.
