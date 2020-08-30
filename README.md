@@ -21,17 +21,20 @@ You can either go to [localhost:5000](http://localhost:5000/) or deploy it on a 
 
 ## How it looks like
 First, upload your .docx documents
-
-<img align="center" src="upload-page.png" width="500">
+<p align="center">
+<img src="upload-page.png" width="500">
+</p>
 
 You'll be redirected to the search homepage. Enter your query, and select the documents you want to search over from the list of uploaded files.
-
-<img align="center" src="search-homepage.png" width="500">
+<p align="center">
+<img src="search-homepage.png" width="500">
+</p>
 
 These are the paragraphs/sentences that are semantically closest to your query. You can click on "See in context" to look at it as part of the whole file.
 
-<img align="center" src="search-result.png" width="1000">
-
+<p align="center">
+<img src="search-result.png" width="1000">
+</p>
 ## Summary
 Suggestions are welcome. Please open an issue first to discuss what you would like to change.
 
