@@ -1,0 +1,64 @@
+body {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+h3.query-header {
+    background-color: #9fe7cc;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+p.line1 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div.res {
+    background-color: #efefef;
+}
+
+
+ul.best-results {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+span.new-search {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container {
+  background-color: #fff
+}
+.form-group {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-group .heading {
+  margin-bottom: 10px;
+}
+.form-group .checkbox {
+  font-weight: normal;
+}
+.form-group .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-group .form-control:focus {
+  z-index: 2;
+}
+.form-group input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

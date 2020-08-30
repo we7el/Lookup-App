@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Search contract</title>
+    </head>
+    
+    
+    <body>
+        
+        <script type="text/javascript">// <![CDATA[
+            function loading(){
+                $("#content").hide();
+                $("#loading").show();
+            }
+        // ]]></script>
+        
+        <div id="loading"></div>
+        <div id="content">
+        <div class="container">
+            <center>
+                <h1 class="heading">Ask me about</h1>
+
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+
+                        {% for message in messages %}
+                            <font color="red">{{ message }}</font>
+                            {% endfor %}
+
+                    {% endif %}
+                {% endwith %}
+
+                <form  action="" method="post" role="form">
+                    {{ form.csrf }}
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="query" name="query" placeholder="type in your query here">
+                        <br>
+                        <h6>Pick one or more files to search in</h6>
+                            <select id="mymultiselect" name="mymultiselect" multiple class="form-control" size="8">
+                                {% for file in available_files %}
+                                <option value="{{ file }}">{{ file }}</option>
+                                {% endfor %}
+                            </select>
+
+                        <br>
+                        <button type="search" class="btn" onclick="loading();">Search</button>
+                    </div>
+                </form>
+                <a href="{{ url_for('.upload') }}">Upload a new file</a>
+            </center>
+        </div>
+        </div>
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
+

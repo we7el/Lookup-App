@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {% if query %}
+        <title>Related to your query: {{ query }}</title>
+        {% else %}
+        <title>Here's what I found</title>
+        {% endif %}
+    </head>
+    <body>
+        <h3>Related to your <mark>query</mark>: {{ query }}</h3>
+        <div><a href="/">New search</a></div>
+        <ul>
+            {% for result in results %}
+            <li><div><p><mark>{{ result }}</mark></p></div></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
